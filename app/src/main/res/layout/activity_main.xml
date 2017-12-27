@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/main"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSearch"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:background="#FF8A65"
+        android:text="Search N Call"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnUpdate"
+        android:layout_alignStart="@+id/btnUpdate"
+        android:layout_alignRight="@+id/btnUpdate"
+        android:layout_alignEnd="@+id/btnUpdate" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new"
+        android:id="@+id/btnAdd"
+        android:textStyle="bold"
+        android:background="#FF8A65"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/btnSearch"
+        android:layout_alignLeft="@+id/btnDelete"
+        android:layout_alignStart="@+id/btnDelete"
+        android:layout_alignRight="@+id/btnDelete"
+        android:layout_alignEnd="@+id/btnDelete" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Contact"
+        android:id="@+id/btnDelete"
+        android:background="#FF8A65"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnSearch"
+        android:layout_alignStart="@+id/btnSearch" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Contact"
+        android:id="@+id/btnUpdate"
+        android:textStyle="bold"
+        android:background="#FF8A65"
+        android:layout_below="@+id/btnDelete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:background="#FF8A65"
+        android:textStyle="bold"
+        android:id="@+id/button_viewAll"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_alignLeft="@+id/btnUpdate"
+        android:layout_alignStart="@+id/btnUpdate"
+        android:layout_alignRight="@+id/btnDelete"
+        android:layout_alignEnd="@+id/btnDelete" />
+
+
+</RelativeLayout>
